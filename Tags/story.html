@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ChiVo</title>
+    <script src="https://kit.fontawesome.com/393a279287.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script scr="https://rolandixor.pro/code/libraries/js/toolbox/toolbox.js"></script>
+    <script>
+        function displayText() {
+            var menuContainer = document.querySelector('.menu-container');
+            if (menuContainer.style.display === 'none' || menuContainer.style.display === '') {
+                menuContainer.style.display = 'block';
+            } else {
+                menuContainer.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="site-header">
+            <div class="site-branding">
+                <h1 class="site-title"><a href="/index.html">Chi Vo</a></h1>
+                <p class="site-description">Documenting my thought, interest, and anything i enjoy in between</p>
+            </div>
+            <div class="drop-down">
+                <button id="page-menu" class="menu" onclick="displayText()">MENU
+                    <div class="menu-container">
+                        <ul>
+                            <li class="menu-item"><a href="/navigation/article.html">Articles</a></li>
+                            <li class="menu-item"><a href="/navigation/poem.html">Poem</a></li>
+                            <li class="menu-item"><a href="/navigation/list100.html">List 100</a></li>
+                        </ul>
+                    </div>
+                </button>
+
+                <nav class="navigation-bar">
+                    <ul>
+                        <li class="menu-item"><a href="/navigation/article.html">Articles</a></li>
+                        <li class="menu-item"><a href="/navigation/poem.html">Poem</a></li>
+                        <li class="menu-item"><a href="/navigation/list100.html">List 100</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="header-image">
+            <a href="index.html"><img src="header-image.jpg" alt="scenery"></a>
+        </div>
+    </div>
+
+    <div class="content">
+        <main class="site-main">
+            <h3>Tags: story</h3>
+            <article id="post4" class="">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="/post-list/post4-chasingthesun.html">Chasing the sun</a></h2>
+                    <a href="/post-list/post4-chasingthesun.html"><img src="/post-list/post4-picture.webp"
+                            alt="pyramid"></a>
+
+                </header>
+
+                <footer class="post-footer">
+                    <span class="post-on">
+                        <!-- <span class="reader">Post on</span> -->
+                        <time class="post-date" datetime="2023-07-09T01:15:05+00:00">September 07, 2023</time>
+                    </span>
+                    <br>
+                    <span class="tag">
+                        <span class="reader">Tags:</span>
+                        <a href="/Tags/travel/" rel="">travel</a>
+                        <a href="/Tags/story">story</a>
+                    </span>
+                </footer>
+
+                <div class="post-content">
+                    <p>Cancun is a city associated with emerald green beaches, soft sand, and never-ending golden
+                        sunshine. The fame of this place has definitely scared backpackers like me a bit.</p>
+                    <p>However, when I came here, things were different. It turns out that that magnificent “Las Vegas
+                        of Mexico” is only a little fraction of what Cancun truly is.</p>
+                    <a href="/post-list/post4-chasingthesun.html" class="links">Continue Reading...</a>
+                </div>
+            </article>
+
+            <article id="post3" class="article">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="post-list/post3-themysteryoflamicachoanaicecream.html">The mystery
+                            of La Micachoana ice cream</a></h2>
+                    <a href="post-list/post3-themysteryoflamicachoanaicecream.html"><img
+                            src="post-list/post3-front.jpg.webp" alt="icecream"></a>
+
+                </header>
+
+                <footer class="post-footer">
+                    <span class="post-on">
+                        <!-- <span class="reader">Post on</span> -->
+                        <time class="post-date" datetime="2024-13-07T01:15:05+00:00">July 18, 2024</time>
+                    </span>
+                    <br>
+                    <span class="tag">
+                        <span class="reader">Tags:</span>
+                        <a href="/Tags/travel/" rel="">travel</a>
+                        <a href="/Tags/story">story</a>
+                    </span>
+                </footer>
+
+                <div class="post-content">
+                    <p>Disclaimer: Before diving into the post, I want to make it clear that I am not involved in any
+                        illicit activities. I am simply a backpacker with a genuine interest in ice cream. In the
+                        unlikely event that this blog attracts unexpected attention, let it be known that my intentions
+                        are purely driven by curiosity. </p>
+                    <a href="/post-list/post3-themysteryoflamicachoanaicecream.html" class="links">Continue
+                        Reading...</a>
+                </div>
+            </article>
+
+            <article id="post2" class="">
+                <header class="post-header">
+                    <h2 class="post-title"><a href="/post-list/post2-togoornottogo.html">To go or not to go</a></h2>
+                </header>
+
+                <footer class="post-footer">
+                    <span class="post-on">
+                        <!-- <span class="reader">Post on</span> -->
+                        <time class="post-date" datetime="2024-05-01T01:15:05+00:00">May 01, 2024</time>
+                    </span>
+                    <br>
+                    <span class="tag">
+                        <span class="reader">Tags:</span>
+                        <a href="/Tags/travel/" rel="">travel</a>
+                        <a href="/Tags/story">story</a>
+                    </span>
+                </footer>
+
+                <div class="post-content">
+                    <p>Isn’t it obvious? What is a better way to explore, to see weird things, to get to know a whole
+                        new world than to go to the place itself?</p>
+                    <a href="/post-list/post2-togoornottogo.html" class="links">Continue Reading...</a>
+                </div>
+            </article>
+        </main>
+
+        <div class="introduction">
+            <div class="about">
+                <h2>About Me</h2>
+                <img src="/author.jpg" alt="author">
+                <h3>Hi! I'm Chi. I'm a student looking for a healthy way to procrastinate.<br>
+                    I want to learn something new everyday and hopefully can write a blog about it. Wish me luck!</h3>
+                <div class="contact-container">
+                    <ul class="contact">
+                        <li><a href="https://www.instagram.com/chi_justchi/" class="fa fa-instagram"></a></li>
+                        <li><a href="https://www.goodreads.com/user/show/146934668-chi" class="fa fa-goodreads"></a>
+                        </li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tag">
+                <h2>Tags</h2>
+                <div class="tag-container">
+                    <ul class="tags">
+                        <li><a href="/Tags/travel.html">travel</a></li>
+                        <li><a href="/Tags/story.html">story</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

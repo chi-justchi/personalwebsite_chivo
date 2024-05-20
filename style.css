@@ -1,0 +1,363 @@
+* {
+    line-height: 28px;
+    font-family: Merriweather, Georgia, serif;
+    font-weight: 400;
+}
+
+body {
+    padding: 2.6em 7.6%;
+    /* font-size: 1rem; */
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.site-branding {
+    float: left;
+}
+
+.site-title {
+    top: 20px;
+    left: 20px;
+    margin: 0px;
+}
+
+.site-title a {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1a1a1a;
+    line-height: 35px;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+}
+
+.site-title a:hover {
+    color: rgb(0, 122, 204);
+}
+
+.site-description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 7px;
+    color: rgb(104, 104, 104);
+}
+
+.navigation-bar ul {
+    list-style: none;
+    font-size: 16px;
+    gap: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    color: #1a1a1a;
+    padding: 0.6em 0.8em;
+    white-space: nowrap;
+    outline-offset: -8px;
+    overflow: hidden;
+
+}
+
+.navigation-bar a:hover {
+    color: rgb(0, 122, 204);
+}
+
+/* ===STUPID BUTTON================ */
+button {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    color: rgb(0, 122, 204);
+
+    font-size: 0.8rem;
+    margin: 1.0em 0;
+    padding: 0.7em
+}
+
+.menu {
+    background-color: transparent;
+    border: 1px solid rgb(0, 122, 204);
+    border-radius: 5%;
+
+    /* align-items: first baseline;
+    justify-content: left; */
+    position: relative;
+}
+
+.menu:hover {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px dotted white;
+    border-radius: 5%;
+}
+
+.menu ul {
+    /* flex: 0 1 100%;
+    margin: 0.8em 0; */
+    position: absolute;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.menu li {
+    background-color: white;
+    opacity: 70%;
+    list-style: none;
+    border-top: 1px solid #1a1a1a;
+}
+
+.menu li:hover {
+    color: black;
+    background-color: #d1d1d1;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.7em;
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+/* ==================================== */
+.header-image img {
+    max-width: 100%;
+    border-image-repeat: stretch;
+    float: clear;
+    padding-bottom: 28px;
+    margin: 1em 0;
+    /* padding: 0.7em; */
+    float: clear;
+}
+
+.header-image img:hover {
+    opacity: 70%;
+}
+
+/*========================================================================*/
+.content {
+    display: grid;
+    grid-template-columns: 2fr 0.75fr;
+    gap: 2em
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* gap: 2em; */
+    padding-bottom: 3em;
+}
+
+.post-header {
+    grid-column: span 2;
+}
+
+.post-header img,
+.post-content img {
+    max-width: 100%;
+    border-image-repeat: stretch;
+    padding-bottom: 28px;
+    margin: 1em 0;
+    /* padding: 0.7em; */
+}
+
+.post-content a:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+.post-header img:hover {
+    opacity: 70%;
+}
+
+.post-header h2.post-title {
+    padding: 0px;
+}
+
+.site-main h2.post-title a {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.site-main h2.post-title a:hover {
+    color: rgb(0, 122, 204);
+}
+
+
+.post-footer span a,
+span,
+time {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 13px;
+    line-height: 21px;
+
+}
+
+/* =================================================================== */
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.introduction>* {
+    border-top-style: solid;
+    border-top-width: 5px;
+    margin-bottom: 56px;
+    overflow-wrap: break-word;
+
+}
+
+.introduction h2 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.introduction h3 {
+    font-size: 13px;
+}
+
+.introduction img {
+    width: 4em;
+    height: 4em;
+    float: left;
+    padding: 10px;
+}
+
+/* /========================================= */
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact .fa {
+    gap: 0.5em;
+    text-decoration: none;
+    padding: .25em;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.contact .fa-instagram {
+    background-color: #f00075;
+    color: #fff;
+}
+
+.contact .fa-goodreads {
+    background-color: #eceadd;
+    color: #382110;
+}
+
+.contact .fa-youtube {
+    background-color: #f0f0f0;
+    color: red;
+}
+
+/* ================================================== */
+.tags {
+    line-height: 21px;
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+
+}
+
+.tags li {
+    display: inline-block;
+}
+
+.tags a {
+    text-decoration: none;
+    color: rgb(0, 122, 204);
+}
+
+.tags a:hover {
+    color: rgb(104, 104, 104);
+}
+
+@media screen and (min-width: 61.5625em) {
+    .main-header button {
+        display: none;
+    }
+
+    /* .site-branding,
+    .menu-toggle,
+    .header-image {
+        margin-top: 1.75em;
+        margin-bottom: 1.75em;
+    } */
+}
+
+@media (max-width: 61.5625em) and (min-width: 56.875em) {
+    .main-header button {
+        display: none;
+    }
+
+    /* .menu-toggle {
+        display: block;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+    } */
+}
+
+@media (max-width: 56.875em) and (min-width: 44.375em) {
+    .navigation-bar {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: none;
+    }
+
+    /* .menu-toggle {
+        margin: 1.3125em 0;
+    } */
+}
+
+@media (max-width: 44.375em) and (min-width: 0) {
+    .navigation-bar {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: none;
+    }
+
+    /* .menu-toggle {
+        margin: 1.3125em 0;
+    } */
+}
